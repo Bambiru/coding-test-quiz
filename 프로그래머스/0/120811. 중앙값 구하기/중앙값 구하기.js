@@ -3,7 +3,7 @@ function solution(array) {
 
     const sorted = array.sort((a,b)=>a-b);
     // length / 2 -> 3/2 = 1.5 => up
-    const ceil = Math.ceil(sorted.length / 2)-1;
+    const ceil = Math.floor(sorted.length / 2);
     
     
     return sorted[ceil];
