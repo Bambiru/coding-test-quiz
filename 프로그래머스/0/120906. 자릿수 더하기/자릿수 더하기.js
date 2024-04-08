@@ -1,11 +1,9 @@
 function solution(n) {
     
-    let str = n+'';
-    let strArr = str.split('');
+    let strArr = n+''.split('');
     let numArr = [];
     
     for(let str of strArr) {
-        
         numArr.push(+str);
     }
     
