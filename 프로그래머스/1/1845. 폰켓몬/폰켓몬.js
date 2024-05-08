@@ -1,19 +1,9 @@
 function solution(nums) {
-    let mon = [];
+    const max = nums.length / 2;
+    const arr = [...new Set(nums)];
     
-    for(let i of nums) {
-        
-        if( !mon.includes(i) ) mon.push(i); 
-    }
-    
-    return mon.slice(0,nums.length / 2).length ;
+    return arr.length > max ? max : arr.length;
 }
     
-    
-// N 마리 중 N/2 가져가도됨
-// 종류에 따라 번호붙여 구분
-// 같은폰켓몬 = 같은 번호
-// 최대한 다양한 종류의 폰켓몬
-
 
 
