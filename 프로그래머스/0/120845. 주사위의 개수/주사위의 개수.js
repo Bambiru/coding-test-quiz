@@ -1,4 +1,7 @@
-function solution(box, n) {
-    return Math.floor((box[0]/n))*Math.floor((box[1]/n))*Math.floor((box[2]/n))
+const solution = (box, n) => {
+    let result = 1;
+    for(let i of box) {
+        result *= Math.floor(i/n);
+    }
+    return result;    
 }
-
